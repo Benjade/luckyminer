@@ -33,7 +33,7 @@ Or, to mine on pool solo.ckpool.org at port 3333 with a specific payout address 
 ```bash
 ./miner solo.ckpool.org 3333 1Bitcoinfr7ZVB1cFVgLJJcweVt8JR2Z3o 6
 ```
-If no arguments are provided, the script defaults to:
+If no arguments are provided, the script defaults to test:
 
 Pool: solo.ckpool.org:3333
 
