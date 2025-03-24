@@ -3,7 +3,7 @@
 ## Multi-Threaded Sha256 LuckyMiner in C++ with Real-Time Status Display
 
 ### Description
-This C++ script implements a multi-threaded Sha256 LuckyMiner that connects to a mining pool via the Stratum protocol. It automatically detects the number of available CPU cores (or uses a user-specified value) to spawn multiple mining threads. The miner logs startup messages (such as pool connection, subscription, and authorization details) at the top of the terminal and then continuously displays real-time mining statistics for each thread—showing hashrate, best difficulty, and nonce—on separate lines below the startup information. Additionally, it listens for new job notifications from the pool and submits found blocks using the provided payout address or worker name.
+This C++ script implements a multi-threaded Sha256 LuckyMiner that connects to a mining pool via the Stratum protocol. It automatically detects the number of available CPU cores (or uses a user-specified value) to spawn multiple mining threads. The miner logs startup messages (such as pool connection, subscription, and authorization details) at the top of the terminal and then continuously displays real-time mining statistics for each thread showing hashrate, best difficulty, and nonce on separate lines below the startup information. Additionally, it listens for new job notifications from the pool and submits found blocks using the provided payout address or worker name.
 
 LuckyMiner is designed to run on any Linux server or Windows Subsystem for Linux (WSL) and is compatible with all SHA256-based blockchains.
 
