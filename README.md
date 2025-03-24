@@ -13,24 +13,26 @@ On Debian/Ubuntu-based systems, install the required dependencies with:
 ```bash
 sudo apt update
 sudo apt install g++ libssl-dev nlohmann-json3-dev
-Compilation
+```
+# Compilation
 Compile the script using:
 
 ```bash
 g++ miner.cpp -o miner -lssl -lcrypto -std=c++11 -pthread
-
+```
 # Usage
 Run the miner with the following syntax:
 ```bash
 ./miner [pool_address] [pool_port] [payout_address] [num_mining_threads]
+```
 For example, to mine Nito on pool eu.minto.day at port 3333 with a specific payout address using 3 mining threads:
 ```bash
 ./miner eu.minto.day 3333 nito1q8wvdpfk78l85gnmdxsvpjguwvh02kw7lqcgxva 3
-
+```
 Or, to mine on pool solo.ckpool.org at port 3333 with a specific payout address using 6 mining threads:
 ```bash
 ./miner solo.ckpool.org 3333 1Bitcoinfr7ZVB1cFVgLJJcweVt8JR2Z3o 6
-
+```
 If no arguments are provided, the script defaults to:
 
 Pool: solo.ckpool.org:3333
